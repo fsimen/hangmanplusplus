@@ -69,7 +69,7 @@ fillInCharacter (Puzzle word filledInSoFar s) c =
     zipper guessed wordChar guessChar =
       if wordChar == guessed
       then
-        Just guessChar
+        Just wordChar
       else 
         guessChar
     newFilledInSoFar = zipWith (zipper c) word filledInSoFar
